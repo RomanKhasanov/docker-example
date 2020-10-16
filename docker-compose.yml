@@ -1,0 +1,12 @@
+version: '3'
+services: 
+    server:
+        build: "./server"
+        ports: 
+            - "3001:3001"
+    front:
+        stdin_open: true
+        build: "./front"
+        ports: 
+            - "3000:3000"
+        
